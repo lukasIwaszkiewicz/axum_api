@@ -1,6 +1,9 @@
 # Rust Axum REST API
 
-# This project sets up a basic REST API using the Axum framework in Rust, with SQLx for database interactions.
+*Following [Rust Axum REST API](https://www.rustfinity.com/blog/create-high-performance-rest-api-with-rust)*
+
+This project sets up a basic REST API using the Axum framework in Rust, with SQLx for database interactions.
+
 
 ## Database Setup
 
@@ -15,6 +18,12 @@
 
 To create the PostgreSQL database, you can use the following command:
 
-```bash
-sqlx database create --name rust-axum-rest-api
+```ps1
+    sqlx database create --name rust-axum-rest-api
+```
+
+Create user table
+
+```ps1
+   sqlx migrate add create_users_table
 ```
